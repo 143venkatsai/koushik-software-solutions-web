@@ -1,0 +1,12 @@
+.footer-container {
+  background-color: #111827;
+  padding: 30px;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: ui-sans-serif system-ui sans-serif "Apple Color Emoji"
+    "Segoe UI Emoji" "Segoe UI Symbol" "Noto Color Emoji";
+  text-align: center;
+}

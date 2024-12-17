@@ -1,0 +1,168 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9fafb;
+  padding: 40px 100px;
+  font-family: ui-sans-serif system-ui sans-serif "Apple Color Emoji"
+    "Segoe UI Emoji" "Segoe UI Symbol" "Noto Color Emoji";
+}
+
+.contact-heading {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.contact-description {
+  font-size: 20px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  padding: 30px 30px;
+  border-radius: 10px;
+  background-color: #ffff;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  border: none;
+  margin-bottom: 10px;
+}
+
+.form-btn {
+  margin-top: auto;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4f46e5;
+  border: none;
+  padding: 5px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  padding-left: 0px;
+  border-radius: 10px;
+  padding: 30px 30px;
+  list-style-type: none;
+  padding-bottom: 60px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-item i {
+  color: #4f46e5;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.item-name {
+  font-size: 20px;
+}
+
+.item-info {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding: 50px 10px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-container {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .contact-details {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .contact-container {
+    padding: 20px 20px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.contact-container {
+  animation: fadeIn 1s ease-out;
+}
+
+.form-container {
+  animation: fadeIn 1s ease-out 0.5s;
+  animation-fill-mode: both;
+}
+
+.contact-details li {
+  animation: fadeIn 1s ease-out;
+  animation-delay: calc(0.2s * var(--order));
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.form-btn:hover {
+  animation: bounce 0.8s ease-in-out;
+}

@@ -1,0 +1,59 @@
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(168, 171, 217, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  padding: 5px 100px;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.company-logo {
+  height: 40px;
+  width: 50px;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.company-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#navitem {
+  font-family: "Roboto", sans-serif;
+  color: #323f4b;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+#navitem:hover {
+  color: #4f46e5;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .company-name {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}

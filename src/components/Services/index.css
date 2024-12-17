@@ -1,0 +1,123 @@
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 100px;
+  font-family: ui-sans-serif system-ui sans-serif "Apple Color Emoji"
+    "Segoe UI Emoji" "Segoe UI Symbol" "Noto Color Emoji";
+}
+
+.services-heading {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.services-description {
+  font-size: 20px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 50px;
+  padding-left: 0px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e6e3e8;
+  width: 32%;
+  margin: auto;
+  padding: 10px 20px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease-out;
+}
+
+.service-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f5ff;
+  border-radius: 50%;
+  padding: 10px 17px;
+  border: none;
+}
+
+.service-image i {
+  color: #4f46e5;
+  font-size: 27px;
+  align-self: center;
+  transition: transform 0.9s ease-in-out;
+}
+
+.service-title {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.service-details {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.service-item:hover {
+  border: 1px solid #4f46e5;
+  transform: translateY(-10px);
+}
+
+.service-image i:hover {
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  .services-container {
+    padding: 60px 10px;
+  }
+
+  .services-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .services-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .services-container {
+    padding: 20px 20px;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
