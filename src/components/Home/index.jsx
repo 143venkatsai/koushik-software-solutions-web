@@ -1,3 +1,4 @@
+import React from "react";
 import { IoArrowForwardSharp } from "react-icons/io5";
 
 import "./index.css";
