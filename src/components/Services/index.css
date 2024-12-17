@@ -93,15 +93,7 @@
 
   .service-item {
     width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .services-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-bottom: 35px;
   }
 }
 
