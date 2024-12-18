@@ -6,7 +6,6 @@
 .footer-text {
   font-size: 14px;
   color: #ffffff;
-  font-family: ui-sans-serif system-ui sans-serif "Apple Color Emoji"
-    "Segoe UI Emoji" "Segoe UI Symbol" "Noto Color Emoji";
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }

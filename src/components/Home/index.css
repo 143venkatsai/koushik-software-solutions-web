@@ -5,8 +5,7 @@
   background-image: linear-gradient(to right, #f2f5ff, #ffffff);
   padding: 40px 100px;
   padding-top: 140px;
-  font-family: ui-sans-serif system-ui sans-serif "Apple Color Emoji"
-    "Segoe UI Emoji" "Segoe UI Symbol" "Noto Color Emoji";
+  font-family: "Poppins", sans-serif;
 }
 
 .home-heading {
@@ -65,8 +64,8 @@
 
 @media screen and (max-width: 768px) {
   .home-container {
-    padding: 30px 10px;
-    padding-top: 180px;
+    padding: 40px 10px;
+    padding-top: 140px;
   }
 
   .home-heading {
@@ -80,13 +79,13 @@
 
 @media screen and (max-width: 640px) {
   .home-link {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     text-align: center;
   }
 
   .home-btn {
-    width: 100%;
+    width: 90%;
   }
 }
 
